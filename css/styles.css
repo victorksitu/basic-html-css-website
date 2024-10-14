@@ -6,6 +6,7 @@
 
 :root {
     --primary-color: #fcf5e9;
+    --dark-color: #333;
 }
 
 body {
@@ -29,8 +30,50 @@ img {
 /* Utilities */
 
 .highlight {
-    background: var(--primary-color);
+    background-color: var(--primary-color);
+    color: #333;
 }
+
+.bg-dark {
+    background: var(--dark-color);
+    color: #fff;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+}
+
+.bg-dark .highlight {
+    padding: 0 0.3rem;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: transparent;
+    border: 1px solid var(--dark-color);
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--dark-color);
+        color: #fff;
+    }
+  }
 
 /* Container */
 
@@ -131,6 +174,8 @@ img {
     }
 }
 
+/* Footer */
+
 .footer {
     border-top: 1px solid #aaa;
     padding: 2rem 1.5rem;
@@ -149,6 +194,68 @@ img {
 
     a {
         margin: 0.2rem;
+    }
+}
+
+/* Services */
+
+.services {
+    padding: 3rem 0 4rem;
+
+    .services-flex {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .service-item h4{
+        font-size: 1.1rem;
+        margin-bottom: 0.7rem;
+    }
+}
+
+/* Team */
+
+.team {
+    padding: 3rem 0 4rem;
+
+    .team-flex {
+        display: flex;
+        gap: 1.4rem;
+    }
+    .profile img {
+        border-radius: 10px;
+    }
+}
+
+/* Contact */
+
+.contact {
+    padding: 3rem 0 4rem;
+
+    p {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .form-group {
+        margin:2rem 0;
+    }
+
+    input, textarea {
+        border: none;
+        border-bottom: 1px solid var(--dark-color);
+        width: 100%;
+        font-family: inherit;
+        font-size: inherit;
+        padding-bottom: 1rem;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    textarea {
+        height: 200px;
     }
 }
 
@@ -176,5 +283,13 @@ img {
         flex-direction: column;
         text-align: center;
         gap: 1.5rem;
+    }
+
+    .services .services-flex {
+        flex-direction: column;
+    }
+
+    .team .team-flex {
+        flex-direction: column;
     }
 }

@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lumina Creative</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.css"
+      integrity="sha512-DKdRaC0QGJ/kjx0U0TtJNCamKnN4l+wsMdION3GG0WVK6hIoJ1UPHRHeXNiGsXdrmq19JJxgIubb/Z7Og2qJww=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -19,6 +25,7 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" href="images/favicon.ico" />
+    <title>Lumina Creative</title>
   </head>
   <body>
     <header class="header">
@@ -27,7 +34,7 @@
         <nav>
           <ul class="menu">
             <li>
-              <a class="current" href="/">Home</a>
+              <a class="current" href="index.html">Home</a>
             </li>
             <li>
               <a href="about.html">About</a>
@@ -52,47 +59,83 @@
     <section class="gallery">
       <div class="container container-lg gallery-flex">
         <div class="gallery-item">
-          <a href="images/image1.jpg">
+          <a
+            href="images/image1.jpg"
+            data-lightbox="image-1"
+            data-title="Image 1"
+          >
             <img src="images/portfolio1.jpg" alt="Portfolio Item 1" />
           </a>
         </div>
         <div class="gallery-item">
-          <a href="images/image2.jpg">
+          <a
+            href="images/image2.jpg"
+            data-lightbox="image-2"
+            data-title="Photo 2"
+          >
             <img src="images/portfolio2.jpg" alt="Portfolio Item 2" />
           </a>
         </div>
         <div class="gallery-item">
-          <a href="images/image3.jpg">
+          <a
+            href="images/image3.jpg"
+            data-lightbox="image-3"
+            data-title="Photo 3"
+          >
             <img src="images/portfolio3.jpg" alt="Portfolio Item 3" />
           </a>
         </div>
         <div class="gallery-item">
-          <a href="images/image4.jpg">
+          <a
+            href="images/image4.jpg"
+            data-lightbox="image-4"
+            data-title="Photo 4"
+          >
             <img src="images/portfolio4.jpg" alt="Portfolio Item 4" />
           </a>
         </div>
         <div class="gallery-item">
-          <a href="images/image5.jpg">
+          <a
+            href="images/image5.jpg"
+            data-lightbox="image-5"
+            data-title="Photo 5"
+          >
             <img src="images/portfolio5.jpg" alt="Portfolio Item 5" />
           </a>
         </div>
         <div class="gallery-item">
-          <a href="images/image6.jpg">
+          <a
+            href="images/image6.jpg"
+            data-lightbox="image-6"
+            data-title="Photo 6"
+          >
             <img src="images/portfolio6.jpg" alt="Portfolio Item 6" />
           </a>
         </div>
         <div class="gallery-item">
-          <a href="images/image7.jpg">
+          <a
+            href="images/image7.jpg"
+            data-lightbox="image-7"
+            data-title="Photo 7"
+          >
             <img src="images/portfolio7.jpg" alt="Portfolio Item 7" />
           </a>
         </div>
         <div class="gallery-item">
-          <a href="images/image8.jpg">
+          <a
+            href="images/image8.jpg"
+            data-lightbox="image-8"
+            data-title="Photo 8"
+          >
             <img src="images/portfolio8.jpg" alt="Portfolio Item 8" />
           </a>
         </div>
         <div class="gallery-item">
-          <a href="images/image9.jpg">
+          <a
+            href="images/image9.jpg"
+            data-lightbox="image-9"
+            data-title="Photo 9"
+          >
             <img src="images/portfolio9.jpg" alt="Portfolio Item 9" />
           </a>
         </div>
@@ -131,5 +174,24 @@
         </div>
       </div>
     </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"
+      integrity="sha512-U9dKDqsXAE11UA9kZ0XKFyZ2gQCj+3AwZdBMni7yXSvWqLFEj8C1s7wRmWl9iyij8d5zb4wm56j4z/JVEwS77g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-JobWAqYk5CSjWuVV3mxgS+MmccJqkrBaDhk8SKS1BW+71dJ9gzascwzW85UwGhxiSyR7Pxhu50k+Nl3+o5I49A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.min.js"
+      integrity="sha512-KbRFbjA5bwNan6DvPl1ODUolvTTZ/vckssnFhka5cG80JVa5zSlRPCr055xSgU/q6oMIGhZWLhcbgIC0fyw3RQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </body>
 </html>
